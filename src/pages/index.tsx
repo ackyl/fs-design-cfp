@@ -1,14 +1,12 @@
 import * as React from 'react'
 import '../global.css'
 import MainWrapper from '../components/default/MainWrapper'
-import Spacer from '../components/default/Spacer'
-import Image from '../components/default/Image'
+import { Text, TextTypes } from '../components/default/Text'
 
 const IndexPage = () => {
   return (
     <MainWrapper>
-      <Spacer margin="40px"></Spacer>
-      <Image src="/images/test.png"></Image>
+      <Text type={TextTypes.hero}>Test Hero Text</Text>
     </MainWrapper>
   )
 }
